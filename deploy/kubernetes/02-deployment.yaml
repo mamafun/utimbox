@@ -20,4 +20,6 @@ spec:
       - image: quay.io/mamafun/utimbox:latest
         imagePullPolicy: IfNotPresent
         name: tools
+      serviceAccount: utimbox
+      serviceAccountName: utimbox
 
