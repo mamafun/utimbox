@@ -1,0 +1,23 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: utimbox
+  name: utimbox
+  namespace: utimbox
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: utimbox
+  template:
+    metadata:
+      labels:
+        app: utimbox
+    spec:
+      containers:
+      - image: quay.io/mamafun/utimbox:latest
+        imagePullPolicy: IfNotPresent
+        name: tools
+
