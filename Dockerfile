@@ -10,4 +10,4 @@ COPY tini /
 
 ENTRYPOINT ["/tini", "--" ]
 
-#ENTRYPOINT ["tail", "-f", "/dev/null"]
+CMD ["tail", "-f", "/dev/null"]
