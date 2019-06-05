@@ -3,23 +3,23 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: utimbox
-  name: utimbox
-  namespace: utimbox
+    app: uubox
+  name: uubox
+  namespace: uubox
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: utimbox
+      app: uubox
   template:
     metadata:
       labels:
-        app: utimbox
+        app: uubox
     spec:
       containers:
-      - image: quay.io/mamafun/utimbox:latest
+      - image: quay.io/mamafun/uubox:latest
         imagePullPolicy: IfNotPresent
-        name: utimbox
-      serviceAccount: utimbox
-      serviceAccountName: utimbox
+        name: uubox
+      serviceAccount: uubox
+      serviceAccountName: uubox
 

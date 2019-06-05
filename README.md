@@ -1,13 +1,13 @@
-# utimbox
+# uubox
 Ultimate utility box image
 
 # Trouble Shoot
 
-## can not remove utimbox namespace
+## can not remove uubox namespace
 
 log:  
 ```
-Operation cannot be fulfilled on namespaces "utimbox": The system is ensuring all content is removed from this namespace.  Upon completion, this namespace will automatically be purged by the system.
+Operation cannot be fulfilled on namespaces "uubox": The system is ensuring all content is removed from this namespace.  Upon completion, this namespace will automatically be purged by the system.
 ```
 
 solution:
