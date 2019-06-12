@@ -10,7 +10,7 @@ RUN set -xe \
         libtool \
         zlib-dev
 
-ENV GRPC_VERSION=${GRPC_VERSION:-1.21.4}
+ENV GRPC_VERSION=${GRPC_VERSION:-1.21.x}
 
 RUN if [[ -z "$GRPC_VERSION" ]]; then echo "GRPC_VERSION argument MUST be set" && exit 1; fi
 
